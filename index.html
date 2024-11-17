@@ -3,76 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
+    <title>Điền CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <!-- Header with Name -->
-        <header>
-            <h1 class="name">Nguyễn Văn A</h1>
-            <p class="job-title">Lập trình viên Frontend</p>
-        </header>
-
-        <!-- Personal Information -->
-        <section class="personal-info">
-            <h2>Thông Tin Cá Nhân</h2>
-            <ul>
-                <li><strong>Email:</strong> nguyenvana@example.com</li>
-                <li><strong>Số điện thoại:</strong> 0901234567</li>
-                <li><strong>Địa chỉ:</strong> Hà Nội, Việt Nam</li>
-                <li><strong>Ngày sinh:</strong> 01/01/1995</li>
-            </ul>
-        </section>
-
-        <!-- Skills -->
-        <section class="skills">
-            <h2>Kỹ Năng</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>ReactJS, Angular</li>
-                <li>Git, GitHub</li>
-                <li>Responsive Design</li>
-            </ul>
-        </section>
-
-        <!-- Experience -->
-        <section class="experience">
-            <h2>Kinh Nghiệm Làm Việc</h2>
-            <div class="job">
-                <h3>Frontend Developer - Công ty ABC</h3>
-                <p><strong>Thời gian:</strong> 2019 - Hiện tại</p>
-                <ul>
-                    <li>Phát triển giao diện người dùng cho các ứng dụng web bằng ReactJS</li>
-                    <li>Tối ưu hóa trang web để đạt hiệu suất cao và trải nghiệm người dùng tốt hơn</li>
-                    <li>Đảm bảo tính tương thích giữa các trình duyệt và thiết bị</li>
-                </ul>
+        <h1>Điền CV</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
             </div>
-            <div class="job">
-                <h3>Junior Web Developer - Công ty XYZ</h3>
-                <p><strong>Thời gian:</strong> 2017 - 2019</p>
-                <ul>
-                    <li>Thiết kế và phát triển giao diện website với HTML, CSS, JavaScript</li>
-                    <li>Hỗ trợ triển khai và bảo trì các dự án web</li>
-                </ul>
-            </div>
-        </section>
 
-        <!-- Education -->
-        <section class="education">
-            <h2>Học Vấn</h2>
-            <div class="degree">
-                <h3>Đại học Bách Khoa Hà Nội</h3>
-                <p><strong>Chuyên ngành:</strong> Công nghệ thông tin</p>
-                <p><strong>Thời gian:</strong> 2013 - 2017</p>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email" required>
             </div>
-        </section>
 
-        <!-- Contact -->
-        <section class="contact">
-            <h2>Thông Tin Liên Hệ</h2>
-            <p>Hãy liên hệ với tôi qua email hoặc điện thoại nếu bạn muốn biết thêm chi tiết.</p>
-        </section>
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Địa chỉ</label>
+                <input type="text" id="address" name="address" placeholder="Nhập địa chỉ" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Ngày sinh</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Kinh nghiệm làm việc</label>
+                <textarea id="experience" name="experience" rows="4" placeholder="Mô tả kinh nghiệm làm việc" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Học vấn</label>
+                <textarea id="education" name="education" rows="4" placeholder="Mô tả học vấn của bạn" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Gửi CV</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
