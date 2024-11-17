@@ -3,52 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Điền CV</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Thông Tin CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Điền CV</h1>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="name">Họ và tên</label>
-                <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
-            </div>
+        <header>
+            <h1>Thông Tin CV</h1>
+        </header>
 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Nhập email" required>
-            </div>
+        <section class="personal-info">
+            <h2>Thông Tin Cá Nhân</h2>
+            <p><strong>Họ và tên:</strong> Nguyễn Văn A</p>
+            <p><strong>Email:</strong> nguyenvana@gmail.com</p>
+            <p><strong>Điện thoại:</strong> 0123456789</p>
+        </section>
 
-            <div class="form-group">
-                <label for="phone">Số điện thoại</label>
-                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
-            </div>
+        <section class="experience">
+            <h2>Kinh Nghiệm Làm Việc</h2>
+            <ul>
+                <li>
+                    <h3>Vị trí: Lập trình viên Web</h3>
+                    <p><strong>Công ty:</strong> ABC Corp</p>
+                    <p><strong>Thời gian:</strong> 2020 - 2023</p>
+                    <p>Phát triển và duy trì các ứng dụng web, làm việc với các công nghệ như HTML, CSS, JavaScript, React.</p>
+                </li>
+                <li>
+                    <h3>Vị trí: Lập trình viên Frontend</h3>
+                    <p><strong>Công ty:</strong> XYZ Ltd.</p>
+                    <p><strong>Thời gian:</strong> 2018 - 2020</p>
+                    <p>Chịu trách nhiệm thiết kế giao diện người dùng, tối ưu hóa trải nghiệm người dùng trên các dự án web.</p>
+                </li>
+            </ul>
+        </section>
 
-            <div class="form-group">
-                <label for="address">Địa chỉ</label>
-                <input type="text" id="address" name="address" placeholder="Nhập địa chỉ" required>
-            </div>
-
-            <div class="form-group">
-                <label for="dob">Ngày sinh</label>
-                <input type="date" id="dob" name="dob" required>
-            </div>
-
-            <div class="form-group">
-                <label for="experience">Kinh nghiệm làm việc</label>
-                <textarea id="experience" name="experience" rows="4" placeholder="Mô tả kinh nghiệm làm việc" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="education">Học vấn</label>
-                <textarea id="education" name="education" rows="4" placeholder="Mô tả học vấn của bạn" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <button type="submit">Gửi CV</button>
-            </div>
-        </form>
+        <section class="education">
+            <h2>Học Vấn</h2>
+            <ul>
+                <li>
+                    <h3>Cử nhân Công Nghệ Thông Tin</h3>
+                    <p><strong>Trường:</strong> Đại học XYZ</p>
+                    <p><strong>Thời gian:</strong> 2014 - 2018</p>
+                </li>
+            </ul>
+        </section>
     </div>
 </body>
 </html>

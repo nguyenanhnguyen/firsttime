@@ -1,91 +1,65 @@
-/* Cài đặt nền tối xanh đen cho toàn bộ trang web */
+/* Đặt font mặc định và lề cho trang */
 body {
-    background-color: #0A1D24; /* Màu nền xanh đen tối */
-    color: #e0e0e0; /* Màu chữ sáng */
-    font-family: Arial, sans-serif; /* Phông chữ */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #1A2A3A;  /* Màu nền xanh tối */
+    color: #fff;  /* Màu chữ sáng */
 }
 
-/* Container chứa form */
+/* Container chính chứa toàn bộ nội dung */
 .container {
-    background-color: #142D3D; /* Nền container màu xanh đen đậm */
-    padding: 40px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 600px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Tiêu đề trang */
-h1 {
+/* Tiêu đề chính */
+header h1 {
     text-align: center;
-    color: #bb86fc; /* Màu tím sáng cho tiêu đề */
+    font-size: 36px;
     margin-bottom: 30px;
+    color: #61dafb; /* Màu xanh sáng */
 }
 
-/* Các nhóm form */
-.form-group {
-    margin-bottom: 20px;
+/* Phần thông tin cá nhân */
+.personal-info, .experience, .education {
+    margin-bottom: 40px;
 }
 
-/* Cài đặt cho label */
-label {
-    display: block;
-    font-size: 14px;
-    color: #e0e0e0;
+h2 {
+    font-size: 28px;
+    color: #61dafb; /* Màu xanh sáng */
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
     margin-bottom: 5px;
 }
 
-/* Các ô input và textarea */
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    background-color: #1C3B47; /* Nền input, textarea màu xanh đen nhạt */
-    color: #e0e0e0;
-    font-size: 14px;
-}
-
-/* Khi hover vào input hoặc textarea */
-input:focus, textarea:focus {
-    border-color: #6200ea; /* Màu viền khi focus */
-    outline: none;
-}
-
-/* Cài đặt cho button */
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #6200ea; /* Màu nút tím sáng */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+p {
     font-size: 16px;
+    line-height: 1.6;
 }
 
-/* Hiệu ứng khi hover nút */
-button:hover {
-    background-color: #3700b3; /* Màu nút khi hover */
+/* Danh sách các kinh nghiệm và học vấn */
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-/* Điều chỉnh cho các màn hình nhỏ */
-@media (max-width: 480px) {
+li {
+    margin-bottom: 20px;
+}
+
+strong {
+    color: #ffcc00; /* Màu vàng cho các nhãn (label) */
+}
+
+/* Đảm bảo trang web responsive */
+@media (max-width: 768px) {
     .container {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    button {
-        padding: 10px;
+        width: 90%;
     }
 }
