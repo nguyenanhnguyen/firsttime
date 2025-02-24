@@ -1,0 +1,67 @@
+/* Đặt nền với tông màu nhẹ nhàng */
+body {
+    background-color: #f0f8ff; /* Màu nền xanh nhạt giống như bầu trời mùa đông */
+    font-family: Arial, sans-serif;
+    color: #333; /* Màu chữ tối để dễ đọc */
+    margin: 0;
+    padding: 0;
+}
+
+/* Tiêu đề với màu đỏ đậm và hiệu ứng đổ bóng */
+h1 {
+    text-align: center;
+    color: #b20000; /* Màu đỏ đậm */
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng đổ bóng nhẹ */
+    margin-top: 50px;
+}
+
+/* Màu nền của các phần chính */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fffaf0; /* Màu nền nhẹ nhàng giống như tuyết */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng nhẹ */
+}
+
+/* Màu chữ trong các phần nội dung */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666; /* Màu chữ xám đậm để dễ đọc */
+}
+
+/* Liên kết có màu xanh lá cây nhẹ */
+a {
+    color: #228b22; /* Màu xanh lá cây giống cây thông Noel */
+    text-decoration: none; /* Bỏ gạch dưới */
+}
+
+a:hover {
+    color: #006400; /* Màu xanh đậm khi hover */
+    text-decoration: underline;
+}
+
+/* Đổi màu các nút với tông màu vàng */
+button {
+    background-color: #ffd700; /* Màu vàng giống ánh sáng đèn Giáng Sinh */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffcc00; /* Màu vàng sáng hơn khi hover */
+}
+
+/* Trang trí hình ảnh Giáng Sinh */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
