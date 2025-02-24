@@ -1,0 +1,67 @@
+/* Đặt nền với màu đỏ nhẹ nhàng của Tết */
+body {
+    background-color: #fff8e1; /* Nền màu vàng nhạt như hoa mai, hoa đào */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Màu chữ tối để dễ đọc */
+    margin: 0;
+    padding: 0;
+}
+
+/* Tiêu đề với màu đỏ đặc trưng của Tết */
+h1 {
+    text-align: center;
+    color: #d32f2f; /* Màu đỏ tươi đặc trưng của Tết */
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng đổ bóng nhẹ */
+    margin-top: 50px;
+}
+
+/* Màu nền của các phần chính */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff; /* Nền trắng cho các phần nội dung */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng nhẹ */
+}
+
+/* Màu chữ trong các phần nội dung */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555; /* Màu chữ xám đậm để dễ đọc */
+}
+
+/* Liên kết có màu vàng */
+a {
+    color: #ff9800; /* Màu vàng cam giống như hoa mai, hoa cúc */
+    text-decoration: none; /* Bỏ gạch dưới */
+}
+
+a:hover {
+    color: #ff5722; /* Màu đỏ cam khi hover */
+    text-decoration: underline;
+}
+
+/* Nút với tông màu đỏ và vàng */
+button {
+    background-color: #ffcc00; /* Màu vàng giống ánh sáng của pháo và đèn Tết */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff9800; /* Màu vàng cam sáng hơn khi hover */
+}
+
+/* Trang trí với hoa mai, hoa đào nhẹ nhàng */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
