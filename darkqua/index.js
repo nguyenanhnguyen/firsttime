@@ -17,7 +17,7 @@ let events = {
     },
     touch: {
         down: "touchstart",
-        mobe: "touchmove",
+        move: "touchmove",
         up: "touchend",
     },
 };
@@ -117,6 +117,6 @@ gridHeight.addEventListener("input", () => {
 });
 
 window.onload = () => {
-    gridHeight.value = 0;
-    gridWidth.value = 0;
+    gridHeight.value = 1;
+    gridWidth.value = 1;
 };
