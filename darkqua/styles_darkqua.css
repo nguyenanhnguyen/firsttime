@@ -1,67 +1,83 @@
-/* Đặt nền với tông màu nhẹ nhàng */
-body {
-    background-color: #f0f8ff; /* Màu nền xanh nhạt giống như bầu trời mùa đông */
-    font-family: Arial, sans-serif;
-    color: #333; /* Màu chữ tối để dễ đọc */
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
 }
 
-/* Tiêu đề với màu đỏ đậm và hiệu ứng đổ bóng */
-h1 {
-    text-align: center;
-    color: #b20000; /* Màu đỏ đậm */
-    font-size: 3rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng đổ bóng nhẹ */
-    margin-top: 50px;
+body{
+    background-color: #43a047;
 }
 
-/* Màu nền của các phần chính */
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fffaf0; /* Màu nền nhẹ nhàng giống như tuyết */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng nhẹ */
+.wrapper{
+    background-color: #fff;
+    width: 80vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 40px 20px;
+    border-radius: 8px;
 }
 
-/* Màu chữ trong các phần nội dung */
-p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #666; /* Màu chữ xám đậm để dễ đọc */
+label{
+    display: block;
 }
 
-/* Liên kết có màu xanh lá cây nhẹ */
-a {
-    color: #228b22; /* Màu xanh lá cây giống cây thông Noel */
-    text-decoration: none; /* Bỏ gạch dưới */
+span{
+    position: relative;
+    font-size: 22px;
+    bottom: -1px;
 }
 
-a:hover {
-    color: #006400; /* Màu xanh đậm khi hover */
-    text-decoration: underline;
+.opt-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
 }
 
-/* Đổi màu các nút với tông màu vàng */
-button {
-    background-color: #ffd700; /* Màu vàng giống ánh sáng đèn Giáng Sinh */
-    color: white;
+button{
+    background-color: #43a047;
     border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding: 5px;
+    color: #fff;
 }
 
-button:hover {
-    background-color: #ffcc00; /* Màu vàng sáng hơn khi hover */
+input[type="color"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 70px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
 }
 
-/* Trang trí hình ảnh Giáng Sinh */
-img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 8px;
+    border: 4px solid #000;
+}
+input[type="color"]::-moz-color-swatch{
+    border-radius: 8px;
+    border: 4px solid #000;
+}
+
+.gridCol{
+    height: 1em;
+    width: 1em;
+    border: 1px solid #ddd;
+}
+
+.gridRow{
+    display: flex;
+}
+
+@media only screen and (max-width: 768px){
+    .gridCol{
+        height: 0.8em;
+        width: 0.8em;
+    }
 }
