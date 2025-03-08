@@ -1,8 +1,22 @@
 body {
+    /*LƯU Ý: đường dẫn tới các file, tệp tĩnh như ảnh ở 
+    dưới thì phải để dạng "raw.githubusercontent.com"*/
     background-image: url('https://raw.githubusercontent.com/nguyenanhnguyen/firsttime/main/web_dev_project/assets_project_1/9741f0c6151635b29300e6f7656e1644.gif');
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0; 
+}
+
+p {
+    font-size: 30px;
+    line-height: 1.6;
+    color: azure;
+}
+
+a {
+    font-size: 20px;
+    line-height: 1.8;
+    color:rgb(173, 246, 194);
 }
